@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Meeting Minutes</title>
+  </head>
+
+  <body>
+    <header>
+        <span>Meeting Minutes</span> (<a href="index.html" download="meetingnotes.html">download</a>)
+
+        <nav>
+            <ul>
+                <li><a href="#attendence">Attendence List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#previous">Last Meeting Recap</a></li>
+                <li><a href="#summary">Meeting Summary</a></li>
+                <li><a href="#images">Mixed Media</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <h2>Documentation and Usage of HTML Elements</h2>
+        <div>Date: April 3rd, 2025<div>
+    
+        <h3 id="attendence">Attendence List</h3>
+        <ul>
+            <li>Adam Connor</li>
+            <li>John Doe</li>
+            <li>Jane Smith</li>
+            <li>Steve Jobs</li>
+            <li>Elon Musk</li>
+            <li>Jeff Bezos</li>
+            <li>Warren Buffett</li>
+
+        </ul>
+
+        <h3 id="agenda">Agenda</h3>
+        <ol>
+            <li>Welcome and Introductions</li>
+            <li>Review of Last Weeks Meeting</li>
+            <li>Explaining HTML Elements</li>
+            <li>Discussion of HTML Best Practices</li>
+            <li>HTML Accessibility Guidelines</li>
+            <li>Q&A Session</li>
+            <li>Next Steps</li>
+        </ol>
+
+        <h3 id="previous">Previously</h3>
+        <p>
+            We completed the last GitHub pages in <em>markdown</em> format. We can also use HTML to format
+            a website which is why we discussed HTML elements in this session.
+        </p>
+
+        <h3 id="summary">Breif Summary of Meeting</h3>
+        <p>
+            A breakdown of common HTML elements, their purposes, and how they structure a webpage.
+            Guidelines for writing clean, maintainable, and efficient HTML code, including proper 
+            nesting, semantic elements, and performance considerations. An overview of accessibility
+            best practices to ensure websites are usable for all users and technologies,
+            <strong>including screen readers</strong>.
+
+            <br>
+
+            <img
+              class="fit-picture"
+              src="https://media.istockphoto.com/id/1992829741/photo/database-diagram-written-on-a-in-a-whiteboard.jpg?s=612x612&w=0&k=20&c=mF8uCrK9ijmjYHtynzXaNu5MOUpwUf3ZLmJglwnnWEE="
+              alt="Database Diagram worked on during meeting" 
+            />
+        </p>
+
+        <h3>Questions Addressed</h3>
+        <ul>
+            <li>Would it be helpful to also learn about how JavaScript interacts with HTML and CSS?
+            <li>Why is following accessibility guidelines important?</li>
+            <li>Are there other uses for HTML besides website development?</li>
+        </ul>
+
+        <section>
+            <h3>Video and Audio File</h3>
+        </section>
+        
+
+    </main>
+
+    <br>
+
+    <details>
+        <summary>Next meeting</summary>
+        <h3>CSS Usage</h3>
+        <p>
+            <span>In our next session, we will focus on CSS to improve the appearance of our web pages.</span>
+            How to style HTML elements using selectors, properties, and values. We will also cover
+            responsive design principles to ensure our web pages look good on all devices.
+        </p>
+
+    </details>
+
+    <hr>
+
+    <footer>
+        <p>&copy; <i>WebDevCompany 2025</i></p>
+    </footer>
+
+    <hr><hr>
+
+    <h4>Feedback Form</h4>
+
+    <form>
+        <label>Name:</label>
+        <input type="text"><br>
+        <label>Date:</label>
+        <input type="date"><br><br>
+
+        <label>Was this meeting helpful?</label><br>
+        <input type="radio" name="helpful">Yes<br>
+        <input type="radio" name="helpful">No<br><br>
+
+        <label>Additional comments:</label><br>
+        <textarea rows="4" cols="30"></textarea><br>
+
+
+        <input type="checkbox"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+  </body>
+
+</html>
