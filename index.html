@@ -78,13 +78,25 @@
 
         <h3>Questions Addressed</h3>
         <ul>
-            <li>Would it be helpful to also learn about how JavaScript interacts with HTML and CSS?
+            <li>Would it be helpful to also learn about how JavaScript interacts with HTML and CSS?</li>
             <li>Why is following accessibility guidelines important?</li>
             <li>Are there other uses for HTML besides website development?</li>
         </ul>
 
         <section>
-            <h3>Video and Audio File</h3>
+            <h3 id="images">Video and Audio File</h3>
+
+            <hr4>Video</hr4><br>
+            <video width="640" height="360" controls>
+                <source src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4" type="video/mp4">
+            </video>
+            <br>
+ 
+            <hr4>Audio</hr4><br>
+            <audio controls>
+                <source src="https://file-examples.com/storage/fef7a0384867fa86095088c/2017/11/file_example_MP3_2MG.mp3" type="audio/mpeg">
+              </audio>
+
         </section>
         
 
@@ -114,11 +126,44 @@
     <h4>Feedback Form</h4>
 
     <form>
-        <label>Name:</label>
-        <input type="text"><br>
-        <label>Date:</label>
-        <input type="date"><br><br>
+        <fieldset>
+            <legend>User Info</legend>
+            <label>Name:</label>
+            <input type="text"><br>
+            <label>Date:</label>
+            <input type="date"><br>
+        </fieldset>
 
+        <br>
+
+        <fieldset>
+            <legend>Meeting Topics</legend>
+            <input type="checkbox" name="HTML">HTML<br>
+            <input type="checkbox" name="CSS">CSS<br>
+            <input type="checkbox" name="JavaScript">JavaScript<br>
+            <input type="checkbox" name="Accessibility">Accessibility<br><br>
+
+            <label for="fav-language">Choose your favorite language:</label>
+            <select id="fav-language" name="language">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="csharp">C#</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
+            <br><br>
+
+            <label for="language">Which topic was the most difficult?:</label>
+            <input list="languages" id="language" name="language">
+
+            <datalist id="languages">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Accessibility">
+            </datalist>
+
+        </fieldset>
         <label>Was this meeting helpful?</label><br>
         <input type="radio" name="helpful">Yes<br>
         <input type="radio" name="helpful">No<br><br>
@@ -127,9 +172,8 @@
         <textarea rows="4" cols="30"></textarea><br>
 
 
-        <input type="checkbox"><br>
-
         <button type="submit">Submit</button>
+
     </form>
 
   </body>
