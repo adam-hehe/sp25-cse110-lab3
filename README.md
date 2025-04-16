@@ -1,1 +1,1 @@
-[Website](adam-hehe.github.io/sp25-cse110-lab3)
+[Website](https://adam-hehe.github.io/sp25-cse110-lab3)
