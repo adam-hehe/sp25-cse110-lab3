@@ -1,6 +1,9 @@
 :root {
     --main-accent-color: hsl(257, 30%, 52%);
 }
+* {
+    font-family: "Times New Te Roman", Times, serif;
+}
 
 h1 { 
 	color: #555760;
@@ -26,6 +29,8 @@ p, li {
 p {
     margin: 15px 20px;
 }
+
+
 
 a {
     color: color-mix(in display-p3, red 40%, blue 60%);
@@ -74,6 +79,7 @@ button {
     display: block;
     padding: 0.5em 1em;
     border-radius: 6px;
+    background-color:#a89bcf
 }
 
 button:hover {
@@ -104,4 +110,24 @@ header {
 nav ul {
     position: static;
 }
+
+ul > li {
+    color: #555760;
+}
+
+li.bold-next + li {
+    font-weight: bold;
+}
+
+li.italic-all-siblings ~ li {
+    font-style: italic;
+}
+
+#copyright {
+    color: black;
+}
+
+input[type="text"]{
+    color: purple;
+  }
   
