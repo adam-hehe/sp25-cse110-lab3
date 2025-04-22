@@ -1,3 +1,4 @@
+/* This is a global variable, it can also be used with a fallback */
 :root {
     --main-accent-color: hsl(257, 30%, 52%);
 }
@@ -64,7 +65,7 @@ fieldset {
     border-radius: 8px;
 }
 
-img {
+p img {
     border-width: 2px;
     border-style: solid;
     border-color: #555760;;
@@ -88,6 +89,7 @@ button:hover {
     color: white;
 }
 
+
 button:active {
     background-color: #767199; 
     transform: scale(0.98);  
@@ -108,8 +110,16 @@ header {
 
 }
 
-nav ul {
+nav {
     position: static;
+    ul {
+        list-style: none; /* Remove default bullet points */
+        gap: 1rem
+    }
+}
+
+ol:has(li) {
+    font-size: 0.75em
 }
 
 ul > li {
