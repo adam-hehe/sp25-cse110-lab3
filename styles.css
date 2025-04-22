@@ -130,5 +130,19 @@ li.italic-all-siblings ~ li {
 
 input[type="text"]{
     color: purple;
-  }
-  
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
