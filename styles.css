@@ -1,8 +1,9 @@
 :root {
     --main-accent-color: hsl(257, 30%, 52%);
 }
-* {
-    font-family: "Times New Te Roman", Times, serif;
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 { 
