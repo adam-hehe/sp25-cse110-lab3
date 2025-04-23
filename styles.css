@@ -119,7 +119,7 @@ nav {
 }
 
 ol:has(li) {
-    font-size: 0.75em
+    font-size: 0.9em
 }
 
 ul > li {
@@ -142,17 +142,20 @@ input[type="text"]{
     color: purple;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
-}
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-items: center;
-}
+@media (min-width: 50em)  {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: left;
+    }
+  }
