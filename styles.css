@@ -113,8 +113,7 @@ header {
 nav {
     position: static;
     ul {
-        list-style: none; /* Remove default bullet points */
-        gap: 1rem
+        list-style: none;
     }
 }
 
